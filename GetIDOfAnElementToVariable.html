@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#mm{
+			  background-color: dodgerblue;
+			}
+		</style>
+	</head>
+	<body>
+		<a class="anchors" id=mm href="https://manikarea.wordpress.com/">Manik Hosen</a>
+		<p>Click the button to display the value of the id attribute of the link above.</p>
+		<button onclick="myFunction()">Get ID</button>
+		<p id="demo"></p>
+		
+		<script>
+			function myFunction() {
+			    var x = document.getElementsByClassName("anchors")[0].id;
+			    document.getElementById("demo").innerHTML = x;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.mystyle {
+			    width: 300px;
+			    height: 50px;
+			    text-align: center;
+			    background-color: coral;
+			    color: white;
+			    margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Search for the first div element in the document. Then, if the div element has an id of "my", change its font size.</p>
+		<div id="my" class="mystyle">I am a DIV element</div>
+		<button onclick="myFunction()">Search ID</button>
+		
+		<script>
+			function myFunction() {
+			    var x = document.getElementsByTagName("DIV")[0];
+			    if (x.id === "my") { 
+			        x.style.fontSize = "30px";
+			    }
+			}
+		</script>
+	</body>
+</html>

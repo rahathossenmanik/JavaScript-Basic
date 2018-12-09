@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<a id="my" href="https://manikarea.wordpress.com/">Manik Hosen</a>
+		<p>Click the button to change the value of the id attribute of the link above to 'your'.</p>
+		<button onclick="myFunction()">Change ID</button>
+		<p id="demo"></p>
+		
+		<script>
+			function myFunction() {
+			    document.getElementById("my").id = "your";
+			    document.getElementById("demo").innerHTML = "The id of the link was changed from 'my' to 'your'.";
+			}
+		</script>
+	</body>
+</html>
