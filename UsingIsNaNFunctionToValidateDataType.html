@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	
+		<h2>JavaScript Comparisons isNaN (Not a Number)</h2>
+		<p>Input your age and and see Magic!!</p>
+		
+		<input id="age" value="18" />
+		<button onclick="myFunction()">Submit</button>
+		<p id="demo"></p>
+		
+		<script>
+			function myFunction() {
+				var age, result;
+				age = Number(document.getElementById("age").value);
+				if (isNaN(age)) {
+					result = "Input is not a number";
+				}
+				else {
+					result = (age <= 18) ? "Too young" : "Old enough";
+				}
+				document.getElementById("demo").innerHTML = result;
+			}
+		</script>
+	
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	
+		<p>Input your age to know that are you old or not:</p>
+		<input id="age" value="18"/>
+		<button onclick="firstFunction()">Submit</button>
+		<p id="demo"></p>
+		
+		<script>
+			function firstFunction() {
+				var age, result;
+				age = document.getElementById("age").value;
+				result = (age <= 18) ? "too young":"old enough";
+				document.getElementById("demo").innerHTML = "You are " + result + ".";
+			}
+			
+		</script>
+	
+	</body>
+</html>

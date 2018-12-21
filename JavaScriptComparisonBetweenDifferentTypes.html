@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	
+		<h2>JavaScript Comparison Between Different Types</h2>
+		<h3>A Number is Converted With a Numerical String Converting the String to Number</h3>
+		<h3>An Alphanumerical String is Converted to a Value NaN that give always false If It is Compared With a Number</h3>
+		<h3>Two Numerical or Alphanumerical  Number Will Define There Comparison According to Bitwise ASCII Value</h3>
+		
+		<h4>Two Numbers</h4>
+		<p id="demo1"></p>
+		
+		<h4>Number and Numerical String</h4>
+		<p id="demo2"></p>
+		
+		<h4>Number Less Than String</h4>
+		<p id="demo3"></p>
+		
+		<h4>Number Greater Than String</h4>
+		<p id="demo4"></p>
+		
+		<h4>Number Equal To String</h4>
+		<p id="demo5"></p>
+		
+		<h4>Numerical String Less Than Numerical String</h4>
+		<p id="demo6"></p>
+		
+		<h4>Numerical String Greater Than Numerical String</h4>
+		<p id="demo7"></p>
+		
+		<h4>Numerical String Equal To Numerical String</h4>
+		<p id="demo8"></p>
+		
+		<h4>Alphanumerical String Less Than Alphanumerical String</h4>
+		<p id="demo9"></p>
+		
+		<h4>Alphanumerical String Greater Than Alphanumerical String</h4>
+		<p id="demo10"></p>
+		
+		<h4>Alphanumerical String Equal To Alphanumerical String</h4>
+		<p id="demo11"></p>
+		
+		<script>
+			document.getElementById("demo1").innerHTML = 2 < 12;
+			document.getElementById("demo2").innerHTML = 2 < "12";
+			document.getElementById("demo3").innerHTML = 2 < "Manik";
+			document.getElementById("demo4").innerHTML = 2 > "Manik";
+			document.getElementById("demo5").innerHTML = 2 == "Manik";
+			document.getElementById("demo6").innerHTML = "2" < "12";
+			document.getElementById("demo7").innerHTML = "2" > "12";
+			document.getElementById("demo8").innerHTML = "2" == "12";
+			document.getElementById("demo9").innerHTML = "Manik" < "Rahat";
+			document.getElementById("demo10").innerHTML = "Manik" > "Rahat";
+			document.getElementById("demo11").innerHTML = "Manik" == "Rahat";
+		</script>
+	
+	</body>
+</html>

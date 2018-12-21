@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	
+		<h2>The Addition Operator</h2>
+		<p id="demo1"></p>
+		
+		<h2>The Subtractiontion Operator</h2>
+		<p id="demo2"></p>
+		
+		<h2>The Multiplication Operator</h2>
+		<p id="demo3"></p>
+		
+		<h2>The Division Operator</h2>
+		<p id="demo4"></p>
+		
+		<h2>The Modulus Operator</h2>
+		<p id="demo5"></p>
+		
+		<h2>The Exponential Operator</h2>
+		<p id="demo6"></p>
+		
+		<h2>The Increment Operator</h2>
+		<p id="demo7"></p>
+		<p id="demo8"></p>
+		
+		<h2>The Decrement Operator</h2>
+		<p id="demo9"></p>
+		<p id="demo10"></p>
+		
+		<script>
+			var x = 5;
+			var y = 2;
+			
+			var z = x + y;
+			document.getElementById("demo1").innerHTML = "x + y = " + z;
+			
+			var z = x - y;
+			document.getElementById("demo2").innerHTML = "x - y = " + z;
+			
+			var z = x * y;
+			document.getElementById("demo3").innerHTML = "x * y = " + z;
+			
+			var z = x / y;
+			document.getElementById("demo4").innerHTML = "x / y = " + z;
+			
+			var z = x % y;
+			document.getElementById("demo5").innerHTML = "x % y = " + z;
+			
+			var z = x ** y;
+			document.getElementById("demo6").innerHTML = "x ^ y = " + z;
+			
+			var z = ++x;
+			document.getElementById("demo7").innerHTML = "++x = " + z;
+			
+			var z = x++;
+			document.getElementById("demo8").innerHTML = "x++ = " + z +" Assigned But Value Have Been Later " + x;
+			
+			var z = --x;
+			document.getElementById("demo9").innerHTML = "--x = " + z;
+			
+			var z = x--;
+			document.getElementById("demo10").innerHTML = "x-- = " + z +" Assigned But Value Have Been Later " + x;
+		</script>
+	
+	</body>
+</html>
