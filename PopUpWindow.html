@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pop-up Window</title>
+		<script type="text/javascript">
+			function popUp(){
+	    		window.open("http://www.google.com/", "Google", "width=800,height=500");
+			}
+	    </script>
+	</head>
+	<body>
+		<h2>Pop-up Window By HTML</h2>
+		<a href="http://www.google.com/" onclick="return !window.open(this.href, 'Google', 'width=800,height=500')"
+		target="_blank" style="background-color:black; color:white; padding:5px; text-decoration:none;">
+			Click To Open Pop-up Window
+		</a>
+		<hr/>
+		<h2>Pop-up Window By JS</h2>
+		<a href="#" onclick="popUp()" style="background-color:blue; color:white; padding:5px; text-decoration:none;">
+			Click To Open Pop-up Window
+		</a>
+	</body>
+</html>
