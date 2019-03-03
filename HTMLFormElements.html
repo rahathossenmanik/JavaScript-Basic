@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>HTML Forms</h2>
+		<form action="https://www.w3schools.com/action_page.php" target="_blank" method="get">
+		  <h4>First Name(Text Field):</h4>
+		  <input type="text" name="name" value="Manik Hosen">
+		  <h4>Genders(Radio Button):</h4>
+		  <fieldset style="border:none;">
+			  <legend>Gender</legend>
+			  <br/>
+			  <input type="radio" name="gender" value="male" checked> Male
+			  <input type="radio" name="gender" value="female"> Female
+			  <input type="radio" name="gender" value="other"> Other
+		  </fieldset>
+		  <input type="submit" value="Submit">
+		</form>
+		
+		<form action="https://www.w3schools.com/action_page.php" target="_blank" method="post">
+		  <h4>First Name(Text Field):</h4>
+		  <input type="text" name="name" value="Manik Hosen">
+		  <h4>Genders(Radio Button):</h4>
+		  <input type="radio" name="gender" value="male" checked> Male
+		  <input type="radio" name="gender" value="female"> Female
+		  <input type="radio" name="gender" value="other"> Other  
+		  <br/>
+		  <h4>Car Name(Dropdown Options):</h4>
+		  <select name="cars" size="1" multiple="multiple">
+		  <option value="volvo">Volvo</option>
+		  <option value="saab">Saab</option>
+		  <option value="fiat" selected="selected">Fiat</option>
+		  <option value="audi">Audi</option>
+		  </select>
+		  <br/>
+		  <br/>
+		  <h4>Message(Text-Box):</h4>
+		  <textarea name="message" rows="5" cols="60">The cat was playing in the garden.</textarea>
+		  <br><br>
+		  <br/>
+		  <input type="submit" value="Submit">
+		</form>
+		
+		<br/>
+		<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+		
+		<h2>The datalist Element</h2>
+		<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+		
+		<form action="https://www.w3schools.com/action_page.php">
+		  <input list="browsers" name="browser">
+		  <datalist id="browsers">
+		    <option value="Internet Explorer">
+		    <option value="Firefox">
+		    <option value="Chrome">
+		    <option value="Opera">
+		    <option value="Safari">
+		  </datalist>
+		  <input type="submit">
+		</form>
+		
+		<h2>The output Element</h2>
+		<p>The output element represents the result of a calculation.</p>
+		<form action="https://www.w3schools.com/action_page.php"
+		oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+		  0
+		  <input type="range" id="a" name="a" value="50">
+		  100 +
+		  <input type="number" id="b" name="b" value="50">
+		  =
+		  <output name="x" for="a b"></output>
+		  <br><br>
+		  <input type="submit">
+		</form>
+		
+		<p>First form is of get method and show inputs in address bar & second form is of post method and don't show inputs in address bar.</p>
+	</body>
+</html>
