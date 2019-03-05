@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html> 
+	<body> 
+		<div style="text-align:center"> 
+			<audio id="audio1">
+			<source src="mult_a.mp3" type="audio/mp3">
+		</audio>
+			<div style="position:fixed; bottom:20px; right:20px; text-align:right;">
+				<button style="background-color:black; color:white;" onclick="playPause()">Play/Pause</button><br/><br/>
+				<button style="background-color:black; color:white;" onclick="stop()">Stop</button><br/><br/>
+				<button style="background-color:black; color:white;" onclick="increaseSound()">Sound+</button><br/><br/>
+				<button style="background-color:black; color:white;" onclick="decreaseSound()">Sound-</button><br/><br/>
+				<button style="background-color:black; color:white;" onclick="silent()">Silent</button><br/><br/>
+			</div>
+		</div> 
+		
+		<script>
+			var myAudio = document.getElementById("audio1");
+			var vol = 0.1;
+			var pastSound = vol;
+			myAudio.volume = vol;
+			
+			function playPause() {
+				if (myAudio.paused)
+			    	myAudio.play();
+				else
+			    	myAudio.pause();
+			}
+			function stop() {
+			    myAudio.currentTime = 0;
+			    myAudio.pause();
+			}
+			function increaseSound() {
+				if(vol<1.0){
+					vol = vol + 0.1;
+					myAudio.volume = vol;
+				}
+			}
+			function decreaseSound() {
+				if(vol>0.0){
+					vol = vol - 0.1;
+					myAudio.volume = vol;
+				}
+			}
+			function silent() {
+				if(vol != 0.0){
+					pastSound = vol;
+					vol = 0.0;
+					myAudio.volume = vol;
+				}
+				else{
+					vol = pastSound;
+					myAudio.volume = vol;
+				}
+				
+			}
+		</script>
+	</body>
+</html>

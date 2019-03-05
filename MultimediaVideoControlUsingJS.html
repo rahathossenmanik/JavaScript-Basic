@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html> 
+	<body> 
+		<div style="text-align:center"> 
+			<video id="video1">
+			<source src="mult_v.mp4" type="video/mp4">
+			</video>
+			<div style="position:fixed; bottom:20px; right:20px; text-align:right;">
+				<button style="background-color:black; color:white;" onclick="playPause()">Play/Pause</button><br/><br/>
+				<button style="background-color:black; color:white;" onclick="makeBig()">Zoom in</button><br/><br/>
+				<button style="background-color:black; color:white;" onclick="makeSmall()">Zoom out</button><br/><br/>
+				<button style="background-color:black; color:white;" onclick="makeNormal()">Normal</button><br/><br/>
+			</div>
+		</div> 
+		
+		<script>
+			var myVideo = document.getElementById("video1");
+			var normal = 600;
+			var current = normal;
+			myVideo.width = normal;
+			
+			function playPause() {
+				if (myVideo.paused)
+			    	myVideo.play();
+				else
+			    	myVideo.pause();
+			}
+			function makeBig() {
+			    if(current<960){
+			    	current = current + 20;
+					myVideo.width = current;
+			    }
+			}
+			function makeSmall() {
+				if(current>320){
+			    	current = current - 20;
+					myVideo.width = current;
+			    }
+			}
+			function makeNormal() {
+			    myVideo.width = normal;
+			}
+		</script>
+	</body>
+</html>
