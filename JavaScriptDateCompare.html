@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>JavaScript Date Compare</h2>
+		<p id="demo"></p>
+		<script>
+		var today, someday, text;
+		today = new Date();
+		someday = new Date();
+		someday.setFullYear(2019, 2, 12);
+		if (someday > today) {
+			text = "Today is before 12th March 2019";
+		}
+		else if(someday < today){
+			text = "Today is after 12th March 2019";
+		}
+		else {
+			text = "Today is 12th March 2019";
+		}
+		document.getElementById("demo").innerHTML = text;
+		</script>
+	</body>
+</html>
