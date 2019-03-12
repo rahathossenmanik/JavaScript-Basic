@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	<h2>JavaScript Lenght Method</h2>
+	<p id="demo1"></p>
+	<h2>JavaScript indexOf() Method</h2>
+	<p id="demo2"></p>
+	<h2>JavaScript slice() Method</h2>
+	<p id="demo3"></p>
+	<h2>JavaScript +(Concatanate) Method</h2>
+	<p id="demo4"></p>
+	<h2>JavaScript replace() Method</h2>
+	<p id="demo5"></p>
+	<h2>JavaScript toUpperCase() Method</h2>
+	<p id="demo6"></p>
+	<h2>JavaScript toLowerCase() Method</h2>
+	<p id="demo7"></p>
+	<h2>JavaScript concate() Method</h2>
+	<p id="demo8"></p>
+	<h2>JavaScript charAt() Method</h2>
+	<p id="demo9"></p>
+	<h2>JavaScript charCodeAt() Method</h2>
+	<p id="demo10"></p>
+	<h2>JavaScript split() Method</h2>
+	<p id="demo11"></p>
+	<script>
+		var txt = "I am Manik Hosen. I like to eat different types of Fruits.";
+		document.getElementById("demo1").innerHTML = "Length of \'" + txt + "\' is " +txt.length;
+		document.getElementById("demo2").innerHTML = "e is the " + (txt.indexOf("H")+1) + "th Charecter. And last occurred at position " + (txt.lastIndexOf("e")+1);
+		document.getElementById("demo3").innerHTML = "The sliced string \'" + txt.slice(5,16) + "\'";
+		document.getElementById("demo4").innerHTML = "Hello " + "Manik";
+		var txt1 = txt.replace("Fruits", "Foods");
+		document.getElementById("demo5").innerHTML = txt1;
+		var txt2 = txt.toUpperCase();
+		document.getElementById("demo6").innerHTML = txt2;
+		var txt3 = txt.toLowerCase();
+		document.getElementById("demo7").innerHTML = txt3;
+		txt = txt.concat(" And I am Fine");
+		document.getElementById("demo8").innerHTML = txt;
+		document.getElementById("demo9").innerHTML = txt.charAt(5);
+		document.getElementById("demo10").innerHTML = txt.charCodeAt(5);
+		var txt4 = txt.split(" ");
+		document.getElementById("demo11").innerHTML = txt4[0];
+	</script>
+	</body>
+</html>
