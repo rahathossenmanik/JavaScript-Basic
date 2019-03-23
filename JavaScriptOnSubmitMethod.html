@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h2>Form Submission Button Disabling</h2>
+		<h4>
+			Note: You Need to Add onsubmit attribute in form tag.
+			An id in submit input tag. And the function definition.
+		</h4>
+		<form onsubmit="submissionPeriod()">
+			<input type="text" placeholder="type text here" required/>
+			<input id="Button" type="submit" value="Submit">
+		</form>
+		<script>
+			function submissionPeriod(){
+				document.getElementById("Button").value = "Please Wait";
+				document.getElementById("Button").disabled = true;
+			}
+		</script>
+	</body>
+</html>
